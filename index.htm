@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd ">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" encoding="utf-8">
+<head>
+  <title>jQuery pageSlide plugin</title>
+  
+  <!-- Files used by jQuery pageSlide plugin -->
+  <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pageslide-0.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.pageslide.css" />
+  <!-- end of files used by jQuery pageSide plugin -->
+  
+  <!-- Start jQuery pageSlide code -->
+  <script type="text/javascript">
+  $(function() {
+      $('a').pageSlide({
+          width: "350px",
+      });
+  });
+  </script>
+  <!-- end jQuery pageSlide code -->
+  
+  <!-- Style for demo purposes only -->
+  <style type="text/css">
+    body {
+        font-family: arial;
+        background-color: #EEE;
+        color: #000;
+    }
+    
+    a {
+        color: #C30;
+        font-size: 42px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    
+    #content {
+        margin: 200px auto;
+        width: 900px;
+        text-align: center;
+    }
+    
+    #secondary {
+        color: #FFF;
+        padding: 15px 35px;
+    }
+    
+  </style>
+  <!-- end Style for demo purposes only -->
+  
+</head>
+<body>
+    <div id="content"><a href="_secondary_page.htm" rel="pageslide">click for pageSlide</a></div>
+</body>
+</html>
