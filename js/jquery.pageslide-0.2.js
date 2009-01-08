@@ -4,10 +4,10 @@
  * This jQuery plugin was inspired by the UI designs of Aza Raskin (http://www.azarask.in/),
  * in his Firefox mobile and Ubiquity mouse gesture prototypes, adapted for use as a jQuery lightBox-esque plugin.
  *
- * @name jquery-pageslide-0.1.js
+ * @name jquery-pageslide-0.2.js
  * @author Scott Robbin - http://srobbin.com
- * @version 0.1
- * @date December 25, 2008
+ * @version 0.2
+ * @date January 7, 2009
  * @category jQuery plugin
  *
  * Dual licensed under the MIT and GPL licenses:
@@ -87,8 +87,8 @@
 	        });
 		}
         
-        // Initalize pageslide.
-		_initialize();
+        // Initalize pageslide, if it hasn't already been done.
+		if($("#pageslide-body-wrap").length == 0) _initialize();
 		return this.each(function(){
 			$(this).unbind("click").bind("click", function(){
 			    _openSlide(this);
