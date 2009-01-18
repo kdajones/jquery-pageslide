@@ -1,0 +1,7 @@
+A jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.
+
+Requirements:
+ - jQuery 1.2.6 or above (http://jquery.com)
+
+Demo:
+ - Open the index.html file located in the 'demo' folder.
