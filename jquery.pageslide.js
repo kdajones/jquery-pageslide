@@ -73,6 +73,7 @@
 		                                   .queue( function() {
 		                                       settings.loaded();
 		                                       $(this).dequeue();
+		                                       $(this).find('.pageslide-close').click(function(){_closeSlide()});
 		                                    });
 		        }
 		    });
